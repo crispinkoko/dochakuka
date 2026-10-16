@@ -1,0 +1,6 @@
+streamlit
+supabase
+pandas
+scikit-learn
+pypdf
+python-docx
