@@ -178,3 +178,11 @@ else:
             q = df[["titre", "auteur", "nb_mots", "lisibilite", "nb_citations", "nb_references"]].copy()
             q["Alerte"] = q.apply(lambda r: "⚠️ peu de citations" if r["nb_citations"] < 3 else "✅", axis=1)
             st.dataframe(q, use_container_width=True, hide_index=True)
+
+# ------------------------------------------------------------------ Pied de page (toutes les pages)
+st.markdown("---")
+st.markdown(
+    "<div style='text-align:center; color:gray; font-size:0.9rem; padding:0.5rem 0 1rem 0;'>"
+    "© Crispin Koko Learn for Build</div>",
+    unsafe_allow_html=True,
+)
